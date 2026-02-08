@@ -1,0 +1,140 @@
+.slide1 {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fddpropertycarealmeria.com%2Fproperty-owners%2F&psig=AOvVaw3hcCnO8EXMUE0x-gakryrs&ust=1702661777648000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICZw8u7j4MDFQAAAAAdAAAAABAn);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 900;
+  height: 390;
+
+}
+.slide1 img{
+ 
+  right: 270px;
+}
+
+.textContainer {
+  position: relative;
+  font-size: 27px;
+  max-height: 50%;
+  right: 456px;
+  list-style: none;
+  white-space: nowrap;
+  top: -60px;
+
+}
+
+.stay span {
+  right: -110px;
+  position: relative;
+}
+
+.animatedText {
+  position: absolute;
+  white-space: nowrap;
+  animation: moveWords 3s linear infinite;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0px 0px 0px 10px;
+  text-decoration-color: #d09707;
+  width: fit-content;
+  overflow: hidden;
+  display: inline-block;
+  transition: transform 1s ease-in-out;
+  animation-duration: 3s;
+  animation-name: e5b6226f3a;
+  animation-iteration-count: infinite;
+  list-style: none;
+  color: #269f23;
+}
+
+.slide1btn button {
+  right: 572px;
+  background-color: #16e110;
+  position: relative;
+  top: 75px;
+  color: black;
+  display: inline-flex;
+  padding: 8px 20px 8px 20px;
+  margin: 39px 35px 18px -15px;
+  white-space: nowrap;
+}
+
+.slide1btn button:hover {
+  background-color: rgb(12, 128, 12);
+  color: white;
+}
+
+.slide3 {
+  width: 939px;
+  height: 470px;
+  position: relative;
+  right: 835px;
+}
+
+.slide3 img {
+  width: 918px;
+  right: -271px;
+  position: relative;
+}
+
+.slide3btn button {
+  background: linear-gradient(90.38deg, #ffa451 -4.71%, #f43193 107.63%);
+  top: -422px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  border-radius: 40px;
+  padding: 8px 10px;
+  width: 175px;
+  font-size: 18px;
+  right: -980px;
+}
+
+.slide3btn button span {
+  letter-spacing: 4px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.slide3 h3 {
+  position: relative;
+  font-size: 30px;
+  right: 14px;
+  top: -464px;
+  color: #803131;
+}
+
+.slide3 p {
+  position: relative;
+  font-size: 22px;
+  right: 25px;
+  top: -253px;
+  color: white;
+}
+
+
+@keyframes moveWords {
+
+  0%,
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  50%,
+  75% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

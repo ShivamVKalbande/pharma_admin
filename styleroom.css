@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&family=Ubuntu&display=swap');
+
+:root {
+    --main-bg-color: black;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+    border:3px solid black;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+  width: 112px;
+  padding: 0px 24px 0px 15px;
+}
+nav ul{
+    height:106px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 38px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:light pink;
+    font-weight:normal;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+  width: 460px;
+  height: 40px;
+  border-radius: 45px;
+  margin:0px -38px 0 70px;
+  padding: 0px 15px;
+}
+.login{
+    display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 630px;
+  padding: 0px 0px 0px 30px;
+  }
+  
+  .login button{
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+  }
+  .login button a{
+    text-decoration: none;
+  }
+ /*.slider{
+    width:1100px;
+    margin: 10px auto;
+ }*/
+ .room{
+    max-width: 91vw;
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.rooms{
+    display: flex;
+    flex-direction:row;
+    
+}
+ .room-item img{
+    width: 300px;
+  margin: 0px -35px;
+ }
+ .room-item{
+    font-family: 'Lato', sans-serif;
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 15vw;
+    margin: 0px 50px;
+ }
+.lines p{
+   font-size:18px;
+}
+
+.box{
+    min-height: 200vh;
+}
+footer{
+    height:8vh;
+    background-color: black;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight:lighter;
+}
+hr{
+    color:rgba(23, 198, 233, 0.959);
+    
+}
+
+@media only screen and (max-width:1260px) {
+    .login {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 434px;
+        padding: 0px 0px 0px 30px;
+    }
+}

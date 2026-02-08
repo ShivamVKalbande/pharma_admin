@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #textContainer {
+      position: relative;
+      font-size: 25px;
+      max-height: 50%; /* Adjust the height based on your content */
+      overflow: hidden;
+    }
+
+    .animatedText {
+     
+      position: absolute;
+    white-space: nowrap;
+    animation: moveWords 3s linear infinite;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0px 0px 0px 10px;
+  text-decoration-color: #ffb700;
+
+ 
+  width: fit-content;
+  overflow: hidden;
+  display: inline-block;
+  transition: transform 1s ease-in-out;
+  animation-duration: 3s;
+  animation-name: e5b6226f3a;
+  animation-iteration-count: infinite;
+  list-style: none;
+}
+    
+
+
+    
+    
+    @keyframes moveWords {
+    
+    0%, 25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  50%, 75% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    
+  </style>
+  <title>Word Animation</title>
+</head>
+<body>
+ <div id="textContainer">
+    <li>
+    <span>Find  </span>
+    <span class="animatedText">ROOMS </span>
+  </li>
+
+    <span> for your next stay </span>
+  </div>
+
+  <script>
+    const replacementWords = ['HOME', 'APARTMENTS', 'FLATS','ROOMS'];
+    let currentIndex = 0;
+
+    function changeWord() {
+      const replaceWord = document.querySelector('.animatedText');
+      replaceWord.textContent = replacementWords[currentIndex];
+      currentIndex = (currentIndex + 1) % replacementWords.length;
+    }
+
+    setInterval(changeWord, 3000); // Change the word every 3 seconds
+  </script>
+
+</body>
+</html>
+
+
+
+

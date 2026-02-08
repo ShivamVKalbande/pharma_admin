@@ -1,0 +1,11 @@
+[08-Feb-2026 12:08:05 Asia/Kolkata] Search error: SQLSTATE[HY093]: Invalid parameter number
+[08-Feb-2026 12:08:08 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\pharma_admin-main\admin\product_list.php:128
+Stack trace:
+#0 C:\xampp\htdocs\pharma_admin-main\admin\product_list.php(128): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\pharma_admin-main\admin\product_list.php on line 128
+[08-Feb-2026 12:29:41 Asia/Kolkata] PHP Warning:  Undefined array key "stock_quantity" in C:\xampp\htdocs\pharma_admin-main\admin\edit_product.php on line 305
+[08-Feb-2026 12:29:41 Asia/Kolkata] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\pharma_admin-main\admin\edit_product.php on line 305
+[08-Feb-2026 12:29:41 Asia/Kolkata] PHP Warning:  Undefined array key "dosage" in C:\xampp\htdocs\pharma_admin-main\admin\edit_product.php on line 338
+[08-Feb-2026 12:29:41 Asia/Kolkata] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\pharma_admin-main\admin\edit_product.php on line 338
+[08-Feb-2026 12:29:41 Asia/Kolkata] PHP Warning:  Undefined array key "prescription_required" in C:\xampp\htdocs\pharma_admin-main\admin\edit_product.php on line 431

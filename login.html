@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/353456fb3e.js" crossorigin="anonymous"></script>
+</head>
+
+<body background="bgimage.png">
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form >
+                    <div class="input-field" >
+                        <input type='email' id="lemail" name="femail" placeholder="Enter your email" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-field" >
+                        <input type="password" id="lpassword" name="fpassword" class="password" placeholder="Enter your password"
+                            required>
+                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <a href="index.html">
+
+                            <button onclick="login">Sign In</button>
+                        </a>
+
+
+                    </div>
+                </form>
+
+                <div class="login-signup" id="loginsetup">
+                    <span class="text">Don't have an account?
+                        <a href="#" class="text signup-link" id="signup">Signup Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form>
+                    <div class="input-field">
+                        <input type="text"  id="name" name="Rname" placeholder="Enter your name" >
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="email"  id="email" name="Remail" placeholder="Enter your email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" name="Rpass" class="password" placeholder="Create a password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password"  id="cpassword" name="Rcpass" class="password" placeholder="Confirm a password">
+                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-eye-slash showHidePw"></i>
+
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+
+
+
+
+                    <button onclick="register">Sign Up</button>
+
+
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="login.html" class="text login-link">SignIn Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="script1.js"></script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>

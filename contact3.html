@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Contact Us - Urban Nest</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index1.html"> <img src="logo.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="about3.html">About Us</a></li>
+                <li><a href="contact3.html">Contact Us</a></li>
+            </ul>
+            
+            <ul class="login">
+                <a href="index.html" class="loginbtn" id="loginButton">Log out</a>
+              </ul>
+            <!-- <ul class="login"><li><a href="login.html" class="loginbtn1" id="form-open">Sign up/Sign in</a></li> </ul> -->
+
+
+
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>CONTACT US</h1>
+        <p>Have questions or need assistance? Feel free to reach out to us. We are here to help you!</p>
+        <form id="contactForm" action="http://localhost:3000/contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+        
+    </div>
+    <footer class="footer">
+        <div class="socialmedia">
+            <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+            <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+            <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+            <a href=""> <i class="fa-brands fa-youtube"></i> </a>
+            <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+            
+        </div>
+        &copy; 2023 Urban Nest. All rights reserved.
+       
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            
+            // Perform AJAX request to submit form data to backend
+            fetch('http://localhost:3000/contact', {
+                method: 'POST',
+                body: new FormData(this) // Serialize form data
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Email sent successfully');
+                    document.getElementById('contactForm').reset(); // Clear the form after successful submission
+                } else {
+                    alert('Failed to send email. Please try again.'); // Show error message if request fails
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error); // Log any errors to the console
+                alert('An unexpected error occurred. Please try again later.');
+            });
+        });
+        </script>
+</body>
+</html>
